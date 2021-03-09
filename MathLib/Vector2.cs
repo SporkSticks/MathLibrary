@@ -3,15 +3,14 @@
 
 //---------------------------------
 //---------------------------------
-namespace MathLib
+namespace MathClasses
 {
 	//---------------------------------
 	//---------------------------------
 	public struct Vector2
 	{
 		// Member Variables
-		public float x;
-		public float y;
+		public float x, y;
 
 		// Constructor
 		public Vector2(float x = 0.0f, float y = 0.0f)
@@ -101,9 +100,7 @@ namespace MathLib
 	public struct Vector3
 	{
 		// Member Variables
-		public float x;
-		public float y;
-		public float z;
+		public float x, y, z;
 
 		public Vector3(float x = 0.0f, float y = 0.0f, float z = 0.0f)
 		{
@@ -200,10 +197,7 @@ namespace MathLib
 	public struct Vector4
 	{
 		// Member Variables
-		public float x;
-		public float y;
-		public float z;
-		public float w;
+		public float x, y, z, w;
 
 		public Vector4(float x = 0.0f, float y = 0.0f, float z = 0.0f, float w = 0.0f)
 		{
@@ -262,6 +256,7 @@ namespace MathLib
 		}
 
 		// f = V.Dot(V) --> Dot Product
+		
 
 		// V = V.Cross(V) --> Cross Product
 	
