@@ -62,18 +62,29 @@ namespace MathLib
 
 		// f = V.Dot(V) --> Dot Product
 
-		
+
 		// V = V.Cross(V) --> Cross Product
 
 
 		// f = V.Magnitude() --> Magnitude
-
+		public static float Magnitude(Vector2 vector2)
+		{
+			float magnitude = (float)Math.Sqrt(vector2.x * vector2.x + vector2.y * vector2.y);
+			return magnitude;
+		}
 
 		// Normalise()
+		public static Vector2 Normalise(Vector2 vector)
+		{
+			float magnitude = Magnitude(vector);
 
+			vector.x /= magnitude;
+			vector.y /= magnitude;
+
+			return vector;
+		}
 
 		// setRotateX(f)
-
 
 		// setRotateY(f)
 	}
@@ -146,13 +157,26 @@ namespace MathLib
 
 
 		// f = V.Magnitude() --> Magnitude
-
+		public static float Magnitude(Vector3 vector3)
+		{
+			float magnitude = (float)Math.Sqrt(vector3.x * vector3.x + vector3.y * vector3.y + vector3.z * vector3.z);
+			return magnitude;
+		}
 
 		// Normalise()
+		public static Vector3 Normalise(Vector3 vector)
+		{
+			float magnitude = Magnitude(vector);
+
+			vector.x /= magnitude;
+			vector.y /= magnitude;
+			vector.z /= magnitude;
+
+			return vector;
+		}
 
 
 		// setRotateX(f)
-
 
 		// setRotateY(f)
 
@@ -233,13 +257,27 @@ namespace MathLib
 
 
 		// f = V.Magnitude() --> Magnitude
+		public static float Magnitude(Vector4 vector4)
+		{
+			float magnitude = (float)Math.Sqrt(vector4.x * vector4.x + vector4.y * vector4.y + vector4.z * vector4.z + vector4.w * vector4.w);
 
+			return magnitude;
+		}
 
 		// Normalise()
+		public static Vector4 Normalise(Vector4 vector)
+		{
+			float magnitude = Magnitude(vector);
 
+			vector.x /= magnitude;
+			vector.y /= magnitude;
+			vector.z /= magnitude;
+			vector.w /= magnitude;
+
+			return vector;
+		}
 
 		// setRotateX(f)
-
 
 		// setRotateY(f)
 
